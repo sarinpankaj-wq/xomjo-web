@@ -8,25 +8,6 @@ export default function About() {
         no smoke and mirrors.
       </p>
 
-      <div className="bg-white rounded-2xl border p-6 mb-8">
-        <h2 className="font-bold text-[#1B4F72] text-lg mb-4">Founder</h2>
-        <div className="flex flex-col gap-2 text-sm">
-          {[
-            ["Name", "Pankaj Sarin"],
-            ["Background", "Sr. Manager, Product Management — PayPal (12.5 years)"],
-            ["Key Work", "Built Issuer Decline Remediation at PayPal — $500M+ TPV"],
-            ["Patents", "70+ granted global patents in AI/ML and fintech"],
-            ["Startup", "StakePay — pre-seed, seeking $2–4M"],
-            ["Contact", "sarin.pankaj@gmail.com"],
-          ].map(([k, v]) => (
-            <div key={k} className="flex gap-3">
-              <span className="font-semibold text-gray-500 w-28 shrink-0">{k}</span>
-              <span className="text-gray-700">{v}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="bg-[#1B4F72] text-white rounded-2xl p-6">
         <h2 className="font-bold text-lg mb-3">Open Source</h2>
         <p className="text-blue-200 text-sm mb-4">
