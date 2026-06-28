@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-white text-[#1C1C28] antialiased">
         <Navbar />
         <main>{children}</main>
+        <GoogleAnalytics gaId="G-1D6FTLEHX2" />
       </body>
     </html>
   );
